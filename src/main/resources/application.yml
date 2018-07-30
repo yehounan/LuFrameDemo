@@ -1,0 +1,16 @@
+server:
+  port: 1127
+appconfig:
+  serverName: jylFrame
+  host: http://localhost:1127/hello
+  isTestServer: true
+  jdbcDriver: com.mysql.jdbc.Driver
+  jdbcUrl: jdbc:mysql://localhost:3306/luframe
+  jdbcUsername: root
+  jdbcPassword: 111111
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
