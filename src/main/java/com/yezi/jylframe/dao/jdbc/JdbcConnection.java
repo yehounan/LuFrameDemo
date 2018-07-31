@@ -1,8 +1,6 @@
 package com.yezi.jylframe.dao.jdbc;
 
 import com.mysql.jdbc.Connection;
-import com.yezi.jylframe.data.config.ApplicationConfig;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -11,9 +9,6 @@ import java.sql.SQLException;
  * created by yezi on 2018/7/30
  */
 public class JdbcConnection {
-
-    @Autowired
-    private ApplicationConfig config;
 
     private static JdbcConnection jdbcConnection = null;
 
@@ -41,6 +36,5 @@ public class JdbcConnection {
         }
         return conn;
     }
-
 
 }
