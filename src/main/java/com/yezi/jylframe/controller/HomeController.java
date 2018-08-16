@@ -22,6 +22,6 @@ public class HomeController {
     @RequestMapping("/hello")
     public String home(Model model) {
         model.addAttribute("now", DateFormat.getDateTimeInstance().format(new Date()));
-        return "hello";
+        return "home";
     }
 }
