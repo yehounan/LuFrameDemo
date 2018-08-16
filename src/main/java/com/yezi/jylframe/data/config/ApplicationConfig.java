@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "appconfig")
 public class ApplicationConfig {
 
-
+    @Value("serverName")
     private String serverName;
 
     private String host;
